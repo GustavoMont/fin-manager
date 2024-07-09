@@ -1,26 +1,14 @@
 import "./App.css";
+import { getFinances } from "./utils";
+import { useState, useEffect } from "react";
 
 function App() {
-  const finances = [
-    {
-      id: 1,
-      description: "Tênis",
-      value: -1200,
-      date: "23/01/2024",
-    },
-    {
-      id: 2,
-      description: "Caiu o freela",
-      value: 2200,
-      date: "23/02/2024",
-    },
-    {
-      id: 3,
-      description: "Fulano mandou o pix",
-      value: 200,
-      date: "23/01/2024",
-    },
-  ];
+  const [finances, setFinances] = useState([]);
+
+  useEffect(() => {
+    getFinances().then((response) => setFinances(response));
+  }, []);
+
   return (
     <main>
       <h2>Lista de Ganhos e Gastos</h2>
