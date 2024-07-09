@@ -34,3 +34,7 @@ Nesta etapa do projeto foi criado os cards que mostram a soma dos
 - gastos
 - ganhos
 - total
+
+## 06 Criou components
+
+Nesta estapa do projeto foi criado o component `Card` para fazer reutilização de código
