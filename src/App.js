@@ -1,4 +1,5 @@
 import "./App.css";
+import { Card } from "./components/Card";
 import {
   getExpensesTotal,
   getFinances,
@@ -21,23 +22,9 @@ function App() {
   return (
     <main>
       <div className="cards-container">
-        <div className="card">
-          <h3>Ganhos</h3>
-          <p>
-            {incomes.toLocaleString("pt-BR", {
-              style: "currency",
-              currency: "BRL",
-            })}
-          </p>
-        </div>
-        <div className="card">
-          <h3>Gastos</h3>
-          <p>{expenses}</p>
-        </div>
-        <div className="card total">
-          <h3>Balanço</h3>
-          <p>{total}</p>
-        </div>
+        <Card title="Ganhos" value={incomes} />
+        <Card title="Gastos" value={expenses} />
+        <Card title="Balanço" value={total} isBalance />
       </div>
       <h2>Lista de Ganhos e Gastos</h2>
       <table>
