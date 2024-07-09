@@ -78,3 +78,81 @@ td.expense {
   background: #49aa26;
   color: white;
 }
+
+.container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* FORM =================== */
+.form-container {
+  width: 50%;
+}
+
+.form-container h2 {
+  color: #49aa26;
+}
+
+form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+form h2 {
+  margin-top: 0;
+}
+form input {
+  border: none;
+  border-radius: 0.2rem;
+
+  padding: 0.8rem;
+
+  width: 100%;
+}
+.input-group {
+  margin-top: 0.8rem;
+}
+.input-group small {
+  color: var(--light-txt);
+  opacity: 0.8;
+}
+
+.input-group.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-group.actions .button,
+.input-group button {
+  width: 48%;
+}
+
+.input-group.check {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  left: 1.7rem;
+  color: var(--light-txt);
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.25rem;
+
+  color: white;
+
+  background: #16a34a;
+
+  padding: 0;
+
+  cursor: pointer;
+}
+button:hover {
+  background: #4ade80;
+}
