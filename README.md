@@ -42,3 +42,7 @@ Nesta estapa do projeto foi criado o component `Card` para fazer reutilização 
 ## 07 Criou formulário
 
 Nesta estapa do projeto foi criado o Formulário pra adicionar novas finanças
+
+## 08 Criou função para submeter o formulário
+
+Nesta estapa do projeto foi criada uma função que adiciona uma nova finança assim que o formulário é submetido
