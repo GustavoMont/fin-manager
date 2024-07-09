@@ -25,6 +25,19 @@ function App() {
   const handleDescriptionChange = (e) => setDescription(e.target.value);
   const handleValueChange = (e) => setValue(Number(e.target.value));
   const handleDateChange = (e) => setDate(e.target.value);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const finance = {
+      description,
+      value,
+      date,
+      id: finances.length + 1,
+    };
+    setFinances([...finances, finance]);
+    setDescription("");
+    setValue(0);
+    setDate("");
+  };
 
   return (
     <main>
@@ -55,7 +68,7 @@ function App() {
         </table>
         <div className="form-container">
           <h2>+ Adicionar nova transação</h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <input
               value={description}
               onChange={handleDescriptionChange}
