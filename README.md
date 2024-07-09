@@ -18,3 +18,7 @@ Neste ponto do projeto foram removidos arquivos que não seriam necessários par
 Nesse ponto foi adicionado a estrtura da página no arquivo `App.js`
 
 E os estilos adicionados tanto no arquivo `index.css` como no `App.css`
+
+## 03 Listou finanças
+
+Nesta parte do projeto criou-se um `array` de objetos e fizemos a listagem deles na página
