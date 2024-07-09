@@ -26,3 +26,11 @@ Nesta parte do projeto criou-se um `array` de objetos e fizemos a listagem deles
 ## 04 Simular requisição asincrona
 
 Nesta parte do projeto simula o carregamento de dados via uma requisição externa
+
+## 05 Criou cards de balanço
+
+Nesta etapa do projeto foi criado os cards que mostram a soma dos
+
+- gastos
+- ganhos
+- total
