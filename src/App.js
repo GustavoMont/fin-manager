@@ -1,6 +1,26 @@
 import "./App.css";
 
 function App() {
+  const finances = [
+    {
+      id: 1,
+      description: "Tênis",
+      value: -1200,
+      date: "23/01/2024",
+    },
+    {
+      id: 2,
+      description: "Caiu o freela",
+      value: 2200,
+      date: "23/02/2024",
+    },
+    {
+      id: 3,
+      description: "Fulano mandou o pix",
+      value: 200,
+      date: "23/01/2024",
+    },
+  ];
   return (
     <main>
       <h2>Lista de Ganhos e Gastos</h2>
@@ -13,26 +33,13 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Tênis</td>
-            <td>-1200</td>
-            <td>23/07/2021</td>
-          </tr>
-          <tr>
-            <td>Tênis</td>
-            <td>-1200</td>
-            <td>23/07/2021</td>
-          </tr>
-          <tr>
-            <td>Tênis</td>
-            <td>-1200</td>
-            <td>23/07/2021</td>
-          </tr>
-          <tr>
-            <td>Tênis</td>
-            <td>-1200</td>
-            <td>23/07/2021</td>
-          </tr>
+          {finances.map((finance) => (
+            <tr key={finance.id}>
+              <td>{finance.description}</td>
+              <td>{finance.value}</td>
+              <td>{finance.date}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </main>
