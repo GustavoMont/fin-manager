@@ -38,3 +38,7 @@ Nesta etapa do projeto foi criado os cards que mostram a soma dos
 ## 06 Criou components
 
 Nesta estapa do projeto foi criado o component `Card` para fazer reutilização de código
+
+## 07 Criou formulário
+
+Nesta estapa do projeto foi criado o Formulário pra adicionar novas finanças
