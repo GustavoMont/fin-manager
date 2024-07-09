@@ -25,3 +25,24 @@ export const getFinances = async () => {
   await delay();
   return finances;
 };
+
+export const getExpensesTotal = (finances) => {
+  const expenses = finances.reduce(
+    (aux, finance) => aux + (finance.value < 0 ? finance.value : 0),
+    0
+  );
+  return expenses;
+};
+
+export const getIncomesTotal = (finances) => {
+  const incomes = finances.reduce(
+    (aux, finance) => aux + (finance.value >= 0 ? finance.value : 0),
+    0
+  );
+  return incomes;
+};
+
+export const getFullBalance = () => {
+  const total = finances.reduce((aux, finance) => aux + finance.value, 0);
+  return total;
+};
