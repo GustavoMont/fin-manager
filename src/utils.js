@@ -42,7 +42,7 @@ export const getIncomesTotal = (finances) => {
   return incomes;
 };
 
-export const getFullBalance = () => {
+export const getFullBalance = (finances) => {
   const total = finances.reduce((aux, finance) => aux + finance.value, 0);
   return total;
 };
